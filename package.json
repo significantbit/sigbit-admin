@@ -1,0 +1,26 @@
+{
+  "name": "sigbit-admin",
+  "version": "0.1.0",
+  "description": "Admin template",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "admin",
+    "bootstrap",
+    "significant",
+    "bit"
+  ],
+  "author": "SignificantBit AB",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8"
+  }
+}
