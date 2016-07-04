@@ -1,7 +1,5 @@
 @import 'bourbon';
 @import 'variables';
 @import "node_modules/bootstrap/scss/bootstrap";
-body {
-    background: white;
-    color: black;
-}
+@import 'components/header-navbar';
+@import 'components/sidebar';

@@ -1,0 +1,32 @@
+#header-navbar {
+  height: $header-navbar-height;
+  padding: $spacer/2 $spacer $spacer/2 0;
+  background: $header-navbar-bg;
+  border-bottom: 1px solid $header-navbar-bottom-border;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  // sidebar toggle
+  #sidebar-toggle {
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: 0;
+    padding: 0 $spacer;
+    border-radius: 0;
+  }
+
+  .navbar-brand {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+}

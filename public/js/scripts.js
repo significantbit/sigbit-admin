@@ -1,4 +1,7 @@
-//=require jquery.js 
+//=require jquery.js
 //=require tether.js
 //=require bootstrap.js
-$('.test').toggle();
+$("#sidebar-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
