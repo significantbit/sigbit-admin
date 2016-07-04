@@ -5,10 +5,11 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
+var include = require("gulp-include");
 
 var config = {
-    sassPath: './resources/sass',
-    bowerDir: './bower_components'
+  sassPath: './resources/sass',
+  bowerDir: './bower_components'
 }
 
 gulp.task('sass', function () {
@@ -63,9 +64,20 @@ gulp.task('browser-sync', ['nodemon'], function () {
 gulp.task('bs-reload', function () {
   browserSync.reload();
 });
-
-gulp.task('default', ['browser-sync'], function () {
-  gulp.watch('public/**/*.js', ['js', browserSync.reload]);
+gulp.task("scripts", function () {
+  gulp.src("public/js/scripts.js")
+    .pipe(include({
+      includePaths: [
+        __dirname + "/node_modules/jquery/dist",    
+        __dirname + "/node_modules/bootstrap/dist/js",       
+        __dirname + "/node_modules/tether/dist/js",                 
+      ]
+    }))
+    .on('error', console.log)
+    .pipe(gulp.dest("public"));
+});
+gulp.task('default', ['browser-sync', 'scripts'], function () {
+  gulp.watch('public/**/*.js', ['scripts', browserSync.reload]);
   gulp.watch('public/**/*.scss', ['sass', browserSync.reload]);
   gulp.watch('public/**/*.html', ['bs-reload']);
 });
