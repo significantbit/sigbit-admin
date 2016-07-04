@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
   // and sending a text 'Ola Mundo!' to see
   // nodemon restarting the server upon edit
 
-  res.sendFile('public/index.html', {"root": __dirname});
+  res.sendFile('public/views/index.html', {"root": __dirname});
 //  res.send('Ola Mundo!');
 
 });
