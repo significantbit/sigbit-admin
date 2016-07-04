@@ -15,6 +15,7 @@
   "author": "SignificantBit AB",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
     "browser-sync": "^2.13.0",
     "express": "^4.14.0",
     "gulp": "^3.9.1",

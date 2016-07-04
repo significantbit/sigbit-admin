@@ -6,10 +6,15 @@ var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
 
+var config = {
+    sassPath: './resources/sass',
+    bowerDir: './bower_components'
+}
+
 gulp.task('sass', function () {
   return gulp.src('./public/**/*.scss')
     .pipe(sass({
-      includePaths: require('node-bourbon').includePaths,
+      includePaths: [require('node-bourbon').includePaths],
       errLogToConsole: true
     }).on('error', sass.logError))
     .pipe(concat('style.css')) // this is what was missing
