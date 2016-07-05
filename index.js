@@ -24,6 +24,10 @@ app.get('/tablebuttons', function(req, res) {
 app.get('/colors', function(req, res) {
   res.render('colors.ejs');
 });
+app.get('/pageheader', function(req, res) {
+  res.render('pageheader.ejs');
+});
+
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
