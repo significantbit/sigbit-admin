@@ -6,7 +6,7 @@
         <div class="row page-header">
           <div class="col-md-12">
             <ol class="breadcrumb">
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li>Egna komponenter</li>
               <li class="active">Table buttons</li>
             </ol>
@@ -19,7 +19,13 @@
             <div class="card">
               <div class="card-block">
                 <h4 class="card-title">Table buttons</h4>
-                <p></p>
+                <p>
+                  Finns både knappar (med tooltips) och dropdown. Knapparna använder de vanliga btn-classerna inuti en <code>class="table-btn-group"</code>.
+                </p>
+                <p class="text-warning"><em>
+                  Knapparna fungerar ganska dåligt på mobil just nu, då de hoppar ner på en ny rad när tabellkolumnen blir för smal.
+                <br>När dropdowns är "open" så disablas <code>.table-responsive</code>s overflow-funktion. Det ser lite dåligt ut och är inte optimalt, men det bör inte förstöra någon funktionalitet.</em>
+                </p>
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
