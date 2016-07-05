@@ -101,7 +101,13 @@ body {
       padding: 0;
 
       li {
-        text-indent: $spacer*2;
+        text-indent: $spacer*1.5;
+        > ul.submenu li {
+          text-indent: $spacer*2;
+        }
+          a[aria-expanded="true"] {
+            background: darken($sidebar-bg,3%);
+          }
       }
       a:hover {
         background: darken($sidebar-bg,3%);

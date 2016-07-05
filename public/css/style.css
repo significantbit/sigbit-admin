@@ -4680,7 +4680,11 @@ body {
     background: #212633;
     padding: 0; }
     .sidebar-nav li ul.submenu li {
-      text-indent: 3rem; }
+      text-indent: 2.25rem; }
+      .sidebar-nav li ul.submenu li > ul.submenu li {
+        text-indent: 3rem; }
+      .sidebar-nav li ul.submenu li a[aria-expanded="true"] {
+        background: #272d3d; }
     .sidebar-nav li ul.submenu a:hover {
       background: #272d3d; }
 
