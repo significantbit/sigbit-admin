@@ -1,0 +1,30 @@
+
+
+.table-btn-group {
+  display: table-cell;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  text-align: right !important;
+
+  .btn {
+    position: relative;
+    margin: 0;
+    font-size: 0.8em;
+    padding: $spacer/4;
+    opacity: 0.7;
+    line-height: 1rem;
+    border: none;
+  }
+
+  .dropdown-menu {
+    font-size: 0.9em;
+  }
+  .dropdown-toggle {
+    font-size: 1.1em;
+
+    &:after {
+      display: none;
+    }
+  }
+
+}
