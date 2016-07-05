@@ -6,6 +6,8 @@ var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
 var include = require("gulp-include");
+var uglify = require('gulp-uglify');
+var cleanCSS = require('gulp-clean-css');
 
 var config = {
   sassPath: './resources/sass',
@@ -68,9 +70,9 @@ gulp.task("scripts", function () {
   gulp.src("public/js/scripts.js")
     .pipe(include({
       includePaths: [
-        __dirname + "/node_modules/jquery/dist",    
-        __dirname + "/node_modules/bootstrap/dist/js",       
-        __dirname + "/node_modules/tether/dist/js",                 
+        __dirname + "/node_modules/jquery/dist",
+        __dirname + "/node_modules/bootstrap/dist/js",
+        __dirname + "/node_modules/tether/dist/js",
       ]
     }))
     .on('error', console.log)
@@ -81,3 +83,33 @@ gulp.task('default', ['browser-sync', 'scripts'], function () {
   gulp.watch('public/**/*.scss', ['sass', browserSync.reload]);
   gulp.watch('views/**/*.ejs', ['bs-reload']);
 });
+
+
+
+gulp.task('prod', function () {
+  gulp.src("public/js/scripts.js")
+    .pipe(include({
+      includePaths: [
+        __dirname + "/node_modules/jquery/dist",
+        __dirname + "/node_modules/bootstrap/dist/js",
+        __dirname + "/node_modules/tether/dist/js",
+      ]
+    }))
+    .on('error', console.log)
+    .pipe(concat('sigbit-admin.js'))
+    .pipe(gulp.dest("dist"))
+    .pipe(concat('sigbit-admin.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest("dist"));
+
+  gulp.src('./public/sass/style.scss')
+    .pipe(sass({
+      includePaths: [require('node-bourbon').includePaths],
+      errLogToConsole: true
+    }).on('error', sass.logError))
+    .pipe(concat('sigbit-admin.css'))
+    .pipe(gulp.dest('dist'))
+    .pipe(concat('sigbit-admin.min.css'))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('dist'));
+})
