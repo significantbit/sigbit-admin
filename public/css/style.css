@@ -4585,7 +4585,11 @@ a.bg-danger:focus, a.bg-danger:hover {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 65%;
+    background: transparent url("http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg") no-repeat center center;
+    background-size: contain; }
     @media (max-width: 767px) {
       #header-navbar .navbar-brand {
         display: block; } }
@@ -4612,7 +4616,7 @@ body {
   margin-left: -250px;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #2d3446;
+  background: #373a3c;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -4650,7 +4654,7 @@ body {
     .sidebar-nav li a:hover {
       text-decoration: none;
       color: #fff;
-      background: #374056; }
+      background: #434749; }
     .sidebar-nav li a:active, .sidebar-nav li a:focus {
       text-decoration: none; }
     .sidebar-nav li a .fa-chevron-right {
@@ -4669,7 +4673,7 @@ body {
       font-size: 0.8em;
       transition: all 0.2s ease-in-out; }
     .sidebar-nav li a[aria-expanded="true"] {
-      background: #374056; }
+      background: #434749; }
       .sidebar-nav li a[aria-expanded="true"] .fa-chevron-right {
         -webkit-transform: translateY(-50%) rotate(90deg);
         -moz-transform: translateY(-50%) rotate(90deg);
@@ -4677,22 +4681,23 @@ body {
         -o-transform: translateY(-50%) rotate(90deg);
         transform: translateY(-50%) rotate(90deg); }
   .sidebar-nav li ul.submenu {
-    background: #212633;
+    background: #282b2c;
     padding: 0; }
     .sidebar-nav li ul.submenu li {
       text-indent: 2.25rem; }
       .sidebar-nav li ul.submenu li > ul.submenu li {
         text-indent: 3rem; }
       .sidebar-nav li ul.submenu li a[aria-expanded="true"] {
-        background: #272d3d; }
+        background: #303234; }
     .sidebar-nav li ul.submenu a:hover {
-      background: #272d3d; }
+      background: #303234; }
 
 .sidebar-brand {
   display: block;
   width: 100%;
   height: 60px;
-  background: #232836;
+  background: #2b2d2f url("http://d1i5cf397ceebi.cloudfront.net/assets/main_logo-4ab62363897ec9168acbb5507e91e7db4910b8006237f4b1be1fb06339a0395a.png") no-repeat 1.5rem center;
+  background-size: auto 50%;
   border: 1px solid black; }
 
 @media (min-width: 768px) {
