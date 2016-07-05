@@ -79,5 +79,5 @@ gulp.task("scripts", function () {
 gulp.task('default', ['browser-sync', 'scripts'], function () {
   gulp.watch('public/**/*.js', ['scripts', browserSync.reload]);
   gulp.watch('public/**/*.scss', ['sass', browserSync.reload]);
-  gulp.watch('public/**/*.html', ['bs-reload']);
+  gulp.watch('views/**/*.ejs', ['bs-reload']);
 });

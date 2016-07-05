@@ -13,11 +13,12 @@ app.get('/', function(req, res) {
   // and sending a text 'Ola Mundo!' to see
   // nodemon restarting the server upon edit
 
-  res.sendFile('public/views/index.html', {"root": __dirname});
+  res.render('index.ejs');
 //  res.send('Ola Mundo!');
 
 });
 
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 server.listen(3000, 'localhost');
