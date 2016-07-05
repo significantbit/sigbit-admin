@@ -1,29 +1,6 @@
 <%- include header.ejs %>
 
 <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-full" id="header-navbar">
-
-        <button id="sidebar-toggle" class="pull-xs-left navbar-toggler" type="button">
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="#">Significant Bit</a>
-        <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar">
-          <i class="fa fa-ellipsis-v"></i>
-        </button>
-
-        <div class="collapse navbar-toggleable-sm" id="CollapsingNavbar">
-          <ul class="nav navbar-nav pull-xs-right">
-            <li class="nav-item">
-              <a class="nav-link" href="#">info@significantbit.se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logga ut</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="container-fluid">
         <div class="row page-header">
@@ -36,136 +13,6 @@
             <h1>Significant Bits adminramverk</h1>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card">
-              <div class="card-block">
-                <h4 class="card-title">Table buttons</h4>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td class="table-btn-group">
-                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
-                          <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
-                          <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td class="table-btn-group">
-                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
-                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
-                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td class="table-btn-group">
-                          <div class="dropdown">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h fa-fw"></i></button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                              <h6 class="dropdown-header">Åtgärder</h6>
-                              <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Redigera</a>
-                              <a class="dropdown-item" href="#"><i class="fa fa-info fa-fw"></i> Mer information</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash fa-fw"></i> Ta bort</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td class="table-btn-group">
-                          <div class="dropdown">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h fa-fw"></i></button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                              <h6 class="dropdown-header">Åtgärder</h6>
-                              <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Redigera</a>
-                              <a class="dropdown-item" href="#"><i class="fa fa-info fa-fw"></i> Mer information</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash fa-fw"></i> Ta bort</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-block">
-                <h4 class="card-title">Responsive table</h4>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
 
         <div class="row">
           <div class="col-lg-6">
@@ -218,4 +65,4 @@
     </div>
     <!-- /#page-content-wrapper -->
 
-<%- include header.ejs %>
+<%- include footer.ejs %>

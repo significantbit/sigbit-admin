@@ -18,6 +18,17 @@ app.get('/', function(req, res) {
 
 });
 
+app.get('/tablebuttons', function(req, res) {
+
+  // Toggle between serving public/index.html
+  // and sending a text 'Ola Mundo!' to see
+  // nodemon restarting the server upon edit
+
+  res.render('tablebuttons.ejs');
+//  res.send('Ola Mundo!');
+
+});
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
