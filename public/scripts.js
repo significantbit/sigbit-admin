@@ -15131,6 +15131,8 @@ var Popover = (function ($) {
 
 }(jQuery);
 
+
+// Sidebar toggle
 $("#sidebar-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");

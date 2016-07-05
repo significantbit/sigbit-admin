@@ -53,32 +53,63 @@ body {
 
 .sidebar-nav {
     width: $sidebar-width;
-    margin: 0;
+    margin: $spacer 0 0 0;
     padding: 0;
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: $spacer;
     line-height: 50px;
+
+    a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: rgba(white,0.7);
+
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+            background: lighten($sidebar-bg,5%);
+        }
+        &:active, &:focus { text-decoration: none; }
+
+        .fa-chevron-right {
+          position: absolute;
+          right: $spacer;
+          top: 50%;
+          @include transform(translateY(-50%) rotate(0deg));
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          text-indent: 0;
+          font-size: 0.8em;
+          @include transition(all .2s ease-in-out);
+        }
+
+        &[aria-expanded="true"] {
+          background: lighten($sidebar-bg, 5%);
+          .fa-chevron-right {
+            @include transform(translateY(-50%) rotate(90deg));
+          }
+        }
+    }
+
+    ul.submenu {
+      background: darken($sidebar-bg,6%);
+      padding: 0;
+
+      li {
+        text-indent: $spacer*2;
+      }
+      a:hover {
+        background: darken($sidebar-bg,3%);
+      }
+    }
+
 }
 
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: rgba(white,0.7);
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: lighten($sidebar-bg,5%);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
 
 .sidebar-brand {
   display: block;

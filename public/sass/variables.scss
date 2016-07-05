@@ -18,6 +18,7 @@ $brand-danger:              #d9534f !default;
 // Override Bootstrap variables
 
 $enable-rounded: true;
+$enable-transitions: true;
 $body-bg: $gray-lighter;
 $spacer: 1.5rem;
 $font-family-sans-serif: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -27,12 +28,12 @@ $font-family-sans-serif: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, san
 // ---------------------------------------
 
 
-// sidebar
+// Sidebar
 
 $sidebar-width: 250px;
 $sidebar-bg:    #2d3446;
 
-// header-navbar
+// Header-navbar
 
 $header-navbar-height:        60px;
 $header-navbar-bg:            white;

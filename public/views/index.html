@@ -11,6 +11,7 @@
      <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,8 +26,14 @@
     <div id="sidebar-wrapper">
       <a href="/" class="sidebar-brand hidden-sm-down">Significant Bit</a>
         <ul class="sidebar-nav">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Shortcuts</a></li>
+            <li><a href="#">Start</a></li>
+            <li><a href="#ui-element" data-toggle="collapse" aria-expanded="false" aria-controls="ui-element">UI-element <span class="fa fa-chevron-right"></span></a>
+              <ul class="submenu collapse" id="ui-element">
+                <li><a href="#">Typografi</a></li>
+                <li><a href="#">Knappar</a></li>
+                <li><a href="#">Whatever</a></li>
+              </ul>
+            </li>
             <li><a href="#">Overview</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">About</a></li>

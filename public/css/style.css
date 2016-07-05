@@ -1387,7 +1387,8 @@ pre {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control::-ms-expand {
     background-color: transparent;
     border: 0; }
@@ -1666,7 +1667,8 @@ input[type="checkbox"].disabled {
   padding: 0.375rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -4565,7 +4567,8 @@ a.bg-danger:focus, a.bg-danger:hover {
   border-bottom: 1px solid #d0d5d8;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  font-size: 0.9em; }
   #header-navbar #sidebar-toggle {
     position: absolute;
     top: 0;
@@ -4632,27 +4635,54 @@ body {
 /* Sidebar Styles */
 .sidebar-nav {
   width: 250px;
-  margin: 0;
+  margin: 1.5rem 0 0 0;
   padding: 0;
   list-style: none; }
 
 .sidebar-nav li {
-  text-indent: 20px;
+  text-indent: 1.5rem;
   line-height: 50px; }
-
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7); }
-
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: #374056; }
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none; }
+  .sidebar-nav li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7); }
+    .sidebar-nav li a:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #374056; }
+    .sidebar-nav li a:active, .sidebar-nav li a:focus {
+      text-decoration: none; }
+    .sidebar-nav li a .fa-chevron-right {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(0deg);
+      -moz-transform: translateY(-50%) rotate(0deg);
+      -ms-transform: translateY(-50%) rotate(0deg);
+      -o-transform: translateY(-50%) rotate(0deg);
+      transform: translateY(-50%) rotate(0deg);
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      text-indent: 0;
+      font-size: 0.8em;
+      transition: all 0.2s ease-in-out; }
+    .sidebar-nav li a[aria-expanded="true"] {
+      background: #374056; }
+      .sidebar-nav li a[aria-expanded="true"] .fa-chevron-right {
+        -webkit-transform: translateY(-50%) rotate(90deg);
+        -moz-transform: translateY(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) rotate(90deg);
+        -o-transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) rotate(90deg); }
+  .sidebar-nav li ul.submenu {
+    background: #212633;
+    padding: 0; }
+    .sidebar-nav li ul.submenu li {
+      text-indent: 3rem; }
+    .sidebar-nav li ul.submenu a:hover {
+      background: #272d3d; }
 
 .sidebar-brand {
   display: block;
