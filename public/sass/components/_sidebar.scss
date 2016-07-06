@@ -134,7 +134,7 @@ body {
   height: $header-navbar-height;
   background: darken($sidebar-bg,5%) url($sidebar-logotype) no-repeat $spacer center;
   background-size: auto 50%;
-  border: 1px solid darken($sidebar-bg,25%);
+  border-bottom: 1px solid darken($sidebar-bg,25%);
 }
 
 

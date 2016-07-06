@@ -14,59 +14,121 @@
     </div>
   </div>
 
+  <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
   <div class="row">
-    <div class="col-lg-4">
-      <div class="card">
-          <h5 class="card-header">Ingen befintlig bild</h5>
-        <div class="card-footer text-xs-right">
-          <button type="button" class="btn btn-primary">Ladda upp</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="card">
-          <h5 class="card-header">Redan befintlig bild</h5>
-          <div class="card-actions">
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger-outline pull-xs-right"><i class="fa fa-trash"></i> Ta bort befintlig bild</button>
-            </div>
-          </div>
-        <div class="card-footer text-xs-right">
-          <button type="button" class="btn btn-secondary">Avbryt</button>
-          <button type="button" class="btn btn-primary disabled">Ladda upp</button>
-        </div>
-      </div>
-    </div>
     <div class="col-lg-4">
       <div class="card">
         <div class="card-block">
           <h5 class="card-title">Information</h5>
-          <p class="card-text">Koden för filuppladdnings-inputs är från Codrops och verkar ha bra browser support.
-            <a href="http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/">Dokumentation och exempel</a>.
+          <p class="card-text">Koden för filuppladdnings-inputs är från Codrops och verkar ha bra browser support. Det går att stänga av möjligheten att ladda upp flera filer samtidigt.
+            Javascriptfilen <code>jQuery.custom-file-input.js</code> behöver inkluderas.
+            <br><br><a href="http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/">Dokumentation och exempel</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-block">
+            <h5 class="card-title">Enkla knappar</h5>
+            <p class="card-text">Utformas med hjälp av Bootstraps egna button-classer och Font Awesome.</p>
+            <input type="file" name="file-9[]" id="file-9" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-9">
+              <a type="button" class="btn btn-primary m-b-1"><i class="fa fa-upload fa-fw"></i> <span>Ladda upp fil</span></a>
+            </label><br>
+            <input type="file" name="file-5[]" id="file-5" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-5">
+              <a type="button" class="btn btn-success-outline m-b-1"><i class="fa fa-upload fa-fw"></i> <span>Ladda upp fil</span></a>
+            </label><br>
+            <input type="file" name="file-6[]" id="file-6" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-6">
+              <a type="button" class="btn btn-secondary"><i class="fa fa-upload fa-fw"></i> <span>Ladda upp fil</span></a>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <h5 class="card-header">Ladda upp (liten)</h5>
 
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Branding</h3>
-            </div>
-            <div class="col-md-8">
-
-            </div>
+          <div class="card-block">
+            <input type="file" name="file-7[]" id="file-7" class="inputfile medium" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-7">
+              <span><i class="fa fa-file-image-o"></i> <small>JPEG, PNG eller GIF</small></span>
+              <a type="button" class="btn btn-primary-outline">Välj fil</a>
+            </label>
           </div>
 
+          <div class="card-footer text-xs-right">
+            <button type="button" class="btn btn-primary">Ladda upp</button>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">Ladda upp (stor)</h5>
+
+          <div class="card-block">
+            <input type="file" name="file-1[]" id="file-1" class="inputfile big" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-1">
+              <i class="fa fa-file-image-o fa-2x"></i><br>
+              <span>Tryck för att välja en fil</span>
+              <br><small class="text-muted">JPEG, PNG eller GIF och max 2MB</small>
+            </label>
+          </div>
+
+          <div class="card-footer text-xs-right">
+            <button type="button" class="btn btn-primary">Ladda upp</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <h5 class="card-header">Redan befintlig bild</h5>
+          <div class="card-actions">
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger-outline pull-xs-right"><i class="fa fa-trash"></i> Ta bort bild</button>
+            </div>
+          </div>
+          <div class="card-block">
+            <img src="https://scontent-arn2-1.xx.fbcdn.net/t31.0-8/12719505_10209518267940390_628276466063031798_o.jpg" class="img-fluid m-b-1" alt="Card image">
+
+            <input type="file" name="file-7[]" id="file-7" class="inputfile medium" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-7">
+              <span><i class="fa fa-file-image-o"></i> <small>Ladda upp en ny bild</small></span>
+              <a type="button" class="btn btn-primary-outline">Välj fil</a>
+            </label>
+          </div>
+          <div class="card-footer text-xs-right">
+            <button type="button" class="btn btn-secondary">Återställ</button>
+            <button type="button" class="btn btn-primary disabled">Ladda upp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Fler exempel</h3>
+            <span>Bild- och filuppladdning som en del av formulär</span>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8">
+                <p class="text-warning">Fyller på med ett formulär här senare.</p>
+              </div>
+              <div class="col-md-4">
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-    <!-- /#page-content-wrapper -->
+<!-- /#page-content-wrapper -->
 
 <%- include footer.ejs %>
+
+<script src="js/jQuery.custom-file-input.js"></script>

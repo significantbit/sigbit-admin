@@ -18,5 +18,14 @@
       padding-top: $spacer/1.1;
       padding-bottom: $spacer/1.1;
       background: transparent;
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0 !important;
+      }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    &.card-header {
+      margin-bottom: 0 !important;
+    }
   }
 }
