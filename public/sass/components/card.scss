@@ -29,3 +29,15 @@
     }
   }
 }
+
+.card-gray-dark         { background-color: $gray-dark; }
+.card-gray              { background-color: $gray; }
+.card-gray-light        { background-color: $gray-light; }
+.card-gray-lighter      { background-color: $gray-lighter; }
+.card-gray-lightest     { background-color: $gray-lightest; }
+.card-sidebar-bg        { background-color: $sidebar-bg; }
+.card-header-navbar-bg  { background-color: $header-navbar-bg; }
+
+.card-gray-dark, .card-gray, .card-gray-light, .card-gray-lighter, .card-gray-lightest, .card-sidebar-bg, .card-header-navbar-bg {
+  border: none;
+ }

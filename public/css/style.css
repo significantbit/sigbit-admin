@@ -4782,6 +4782,30 @@ body {
   .card h1.card-header, .card h2.card-header, .card h3.card-header, .card h4.card-header, .card h5.card-header, .card h6.card-header {
     margin-bottom: 0 !important; }
 
+.card-gray-dark {
+  background-color: #373a3c; }
+
+.card-gray {
+  background-color: #55595c; }
+
+.card-gray-light {
+  background-color: #818a91; }
+
+.card-gray-lighter {
+  background-color: #eceeef; }
+
+.card-gray-lightest {
+  background-color: #f7f7f9; }
+
+.card-sidebar-bg {
+  background-color: #373a3c; }
+
+.card-header-navbar-bg {
+  background-color: white; }
+
+.card-gray-dark, .card-gray, .card-gray-light, .card-gray-lighter, .card-gray-lightest, .card-sidebar-bg, .card-header-navbar-bg {
+  border: none; }
+
 .table-btn-group {
   display: table-cell;
   padding: 0 !important;
