@@ -4593,6 +4593,22 @@ a.bg-danger:focus, a.bg-danger:hover {
     @media (max-width: 767px) {
       #header-navbar .navbar-brand {
         display: block; } }
+  #header-navbar .btn-group {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    height: 100%; }
+    #header-navbar .btn-group .btn {
+      height: 100%;
+      padding: 0;
+      font-size: 1rem; }
+      @media (max-width: 767px) {
+        #header-navbar .btn-group .btn {
+          padding: 0 1.5rem; }
+          #header-navbar .btn-group .btn i {
+            font-size: 1.25rem; }
+          #header-navbar .btn-group .btn:after {
+            display: none; } }
 
 body {
   overflow-x: hidden; }

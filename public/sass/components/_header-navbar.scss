@@ -34,4 +34,28 @@
     }
   }
 
+.btn-group {
+  position: absolute;
+  top: 0;
+  right: $spacer;
+  height: 100%;
+
+  .btn {
+    height: 100%;
+    padding: 0;
+    font-size: 1rem;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 $spacer;
+
+      i { font-size: 1.25rem; }
+
+      &:after {
+        display: none;
+      }
+    }
+   }
+}
+
+
 }

@@ -34,24 +34,25 @@
 
       <nav class="navbar navbar-full" id="header-navbar">
 
-        <button id="sidebar-toggle" class="pull-xs-left navbar-toggler" type="button">
+        <button id="sidebar-toggle" class=" navbar-toggler" type="button">
           <i class="fa fa-bars"></i>
         </button>
         <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar">
-          <i class="fa fa-ellipsis-v"></i>
-        </button>
 
-        <div class="collapse navbar-toggleable-sm" id="CollapsingNavbar">
-          <ul class="nav navbar-nav pull-xs-right">
-            <li class="nav-item">
-              <a class="nav-link" href="#">info@significantbit.se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logga ut</a>
-            </li>
-          </ul>
+        <div class="btn-group pull-xs-right">
+          <button type="button" class="navbar-toggler btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-ellipsis-v hidden-md-up"></i>
+            <span class="hidden-sm-down">info@significantbit.se</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <h6 class="dropdown-header hidden-md-up">info@significantbit.se</h6>
+            <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Inställningar</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-link fa-fw"></i> Länk</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-fw"></i> Logga ut</a>
+          </div>
         </div>
+
       </nav>
 
       <!-- /#header-navbar -->
