@@ -1,4 +1,22 @@
 // Override bootstrap CSS
 .card {
   margin-bottom: $spacer;
+
+  .card-actions {
+    position: absolute;
+    top: $spacer/1.25;
+    right: $spacer/1.25;
+    font-size: 0.9em;
+    .btn {
+      font-size: 0.9em;
+      padding: $spacer/5 $spacer/2;
+    }
+  }
+
+  .card-header {
+      position: relative;
+      padding-top: $spacer/1.1;
+      padding-bottom: $spacer/1.1;
+      background: transparent;
+  }
 }

@@ -4575,7 +4575,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     bottom: -1px;
     left: 0;
     padding: 0 1.5rem;
-    border-radius: 0; }
+    border-radius: 0;
+    outline: 0 !important; }
   #header-navbar .navbar-brand {
     display: none;
     position: absolute;
@@ -4763,6 +4764,19 @@ body {
 
 .card {
   margin-bottom: 1.5rem; }
+  .card .card-actions {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 0.9em; }
+    .card .card-actions .btn {
+      font-size: 0.9em;
+      padding: 0.3rem 0.75rem; }
+  .card .card-header {
+    position: relative;
+    padding-top: 1.36364rem;
+    padding-bottom: 1.36364rem;
+    background: transparent; }
 
 .table-btn-group {
   display: table-cell;
