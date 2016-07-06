@@ -4646,17 +4646,23 @@ body {
 .sidebar-nav li {
   text-indent: 1.5rem;
   line-height: 50px; }
+  .sidebar-nav li .active {
+    color: white !important; }
   .sidebar-nav li a {
     position: relative;
     display: block;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.6); }
     .sidebar-nav li a:hover {
       text-decoration: none;
       color: #fff;
       background: #434749; }
     .sidebar-nav li a:active, .sidebar-nav li a:focus {
       text-decoration: none; }
+    .sidebar-nav li a > * {
+      text-indent: 0; }
+    .sidebar-nav li a .fa {
+      margin-right: 0.75rem; }
     .sidebar-nav li a .fa-chevron-right {
       position: absolute;
       right: 1.5rem;
@@ -4669,7 +4675,7 @@ body {
       width: 10px;
       height: 10px;
       display: inline-block;
-      text-indent: 0;
+      margin: 0;
       font-size: 0.8em;
       transition: all 0.2s ease-in-out; }
     .sidebar-nav li a[aria-expanded="true"] {

@@ -1,28 +1,29 @@
-    <div id="sidebar-wrapper">
+    <div id="sidebar-wrapper" role="navigation">
       <a href="/" class="sidebar-brand hidden-sm-down"></a>
-      <ul class="sidebar-nav">
-        <li><a href="/">Start</a></li>
+      <ul class="nav sidebar-nav">
+        <li class="nav-item"><a href="/" class="nav-link active"><i class="fa fa-home" aria-hidden="true"></i> Start</a></li>
 
-        <li><a href="#">Bootstraps komponenter</a></li>
+        <li class="nav-item"><a href="#" class="nav-link disabled">Bootstraps komponenter</a></li>
 
-        <li><a href="#egna-komponenter" data-toggle="collapse" aria-expanded="false" aria-controls="egna-komponenter">Egna komponenter <i class="fa fa-chevron-right"></i></a>
+        <li class="nav-item"><a href="#egna-komponenter" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="egna-komponenter">Egna komponenter <i class="fa fa-chevron-right"></i></a>
           <ul class="submenu collapse" id="egna-komponenter">
-            <li><a href="/pageheader">Page header</a></li>
-            <li><a href="/tablebuttons">Table buttons</a></li>
-            <li><a href="/tablesort">Sortable table</a></li>
+            <li class="nav-item"><a href="/pageheader" class="nav-link">Page header</a></li>
+            <li class="nav-item"><a href="/tablebuttons" class="nav-link">Table buttons</a></li>
+            <li class="nav-item"><a href="/tablesort" class="nav-link">Sortable table</a></li>
           </ul>
         </li>
 
-        <li><a href="/colors">Standardfärger</a></li>
+        <li class="nav-item"><a href="/colors" class="nav-link">Standardfärger</a></li>
 
-        <li><a href="#ui-element" data-toggle="collapse" aria-expanded="false" aria-controls="ui-element">Dropdown <i class="fa fa-chevron-right"></i></a>
+        <li class="nav-item"><a href="#ui-element" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-element"><i class="fa fa-list-ul" aria-hidden="true"></i> Dropdown <i class="fa fa-chevron-right"></i></a>
           <ul class="submenu collapse" id="ui-element">
-            <li><a href="#">Typografi</a></li>
-            <li><a href="#">Knappar</a></li>
-            <li><a href="#whatever" data-toggle="collapse" aria-expanded="false" aria-controls="whatever">Whatever level 2 <i class="fa fa-chevron-right"></i></a>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-link" aria-hidden="true"></i> Länk</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-circle-o" aria-hidden="true"></i> Ikoner</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</a></li>
+            <li class="nav-item"><a href="#whatever" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="whatever"><i class="fa fa-list-ul" aria-hidden="true"></i> Whatever level 2 <i class="fa fa-chevron-right"></i></a>
               <ul class="submenu collapse" id="whatever">
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Woho vad kul</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Level 3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Woho vad kul</a></li>
               </ul>
             </li>
           </ul>
