@@ -4616,9 +4616,6 @@ body {
 
 #wrapper {
   padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 #wrapper.toggled {
@@ -4634,9 +4631,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background: #373a3c;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -4694,7 +4688,7 @@ body {
       display: inline-block;
       margin: 0;
       font-size: 0.8em;
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.2s ease; }
     .sidebar-nav li a[aria-expanded="true"] {
       background: #434749; }
       .sidebar-nav li a[aria-expanded="true"] .fa-chevron-right {
