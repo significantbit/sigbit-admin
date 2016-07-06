@@ -1,0 +1,72 @@
+<%- include header.ejs %>
+
+<!-- Page Content -->
+
+<div class="container-fluid">
+  <div class="row page-header">
+    <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li>Egna komponenter</li>
+        <li class="active">Image upload</li>
+      </ol>
+      <h1>Image upload</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+          <h5 class="card-header">Ingen befintlig bild</h5>
+        <div class="card-footer text-xs-right">
+          <button type="button" class="btn btn-primary">Ladda upp</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+          <h5 class="card-header">Redan befintlig bild</h5>
+          <div class="card-actions">
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger-outline pull-xs-right"><i class="fa fa-trash"></i> Ta bort befintlig bild</button>
+            </div>
+          </div>
+        <div class="card-footer text-xs-right">
+          <button type="button" class="btn btn-secondary">Avbryt</button>
+          <button type="button" class="btn btn-primary disabled">Ladda upp</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-block">
+          <h5 class="card-title">Information</h5>
+          <p class="card-text">Koden för filuppladdnings-inputs är från Codrops och verkar ha bra browser support.
+            <a href="http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/">Dokumentation och exempel</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Branding</h3>
+            </div>
+            <div class="col-md-8">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- /#page-content-wrapper -->
+
+<%- include footer.ejs %>

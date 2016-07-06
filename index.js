@@ -30,6 +30,9 @@ app.get('/colors', function(req, res) {
 app.get('/pageheader', function(req, res) {
   res.render('pageheader.ejs');
 });
+app.get('/imageupload', function(req, res) {
+  res.render('imageupload.ejs');
+});
 
 
 app.set('view engine', 'ejs');
