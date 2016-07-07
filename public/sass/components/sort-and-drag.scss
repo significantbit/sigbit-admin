@@ -1,6 +1,3 @@
-
-
-
 .nestable-list {
   position: relative;
   padding: 0;
@@ -17,6 +14,7 @@
   display: block;
   position: relative;
 }
+
 
 .nestable-handle {
     display: block;
@@ -80,10 +78,13 @@
   position: absolute;
   pointer-events: none;
   z-index: 9999;
+
+  .nestable-handle { background: $gray-lightest; }
+  .small-action-btn-group { display: none; }
 }
 
 .nestable-dragel > .nestable-item .nestable-handle { margin-top: 0; }
 
 .nestable-dragel .nestable-handle {
-            box-shadow: 2px 4px 6px 0 rgba(0,0,0,.1); // Bootstrap variabel
+    @include box-shadow(0 6px 12px rgba(0,0,0,.175));
 }
