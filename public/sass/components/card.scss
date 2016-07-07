@@ -13,6 +13,12 @@
     }
   }
 
+  .card-header .card-actions {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+
   .card-header {
       position: relative;
       padding-top: $spacer/1.1;
