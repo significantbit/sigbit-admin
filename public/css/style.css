@@ -4931,23 +4931,27 @@ table .small-action-btn-group {
   position: relative;
   cursor: pointer;
   float: left;
-  width: 25px;
-  height: 20px;
-  padding: 0;
-  text-indent: 100%;
+  width: 18px;
+  margin: 0 0.3rem 0 0.75rem;
+  padding: 0.75rem 0;
+  text-indent: -9999px;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 0;
+  background: transparent; }
 
 .nestable-item > button:before {
   display: block;
+  margin-top: 5px;
   position: absolute;
-  background: #44f;
-  content: '+';
-  width: 100%;
+  font-family: 'FontAwesome';
+  font-size: 0.9em;
+  content: '\f067';
+  color: #818a91;
   text-indent: 0; }
 
 .nestable-item > button[data-action="collapse"]:before {
-  content: '-'; }
+  content: '\f068'; }
 
 .nestable-placeholder,
 .nestable-empty {
