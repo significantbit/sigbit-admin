@@ -1,0 +1,228 @@
+<%- include header.ejs %>
+
+<!-- Page Content -->
+
+<div class="container-fluid">
+  <div class="row page-header">
+    <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li>Egna komponenter</li>
+        <li class="active">Knappar</li>
+      </ol>
+      <h1>Knappar</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Small action buttons</h3>
+          <p>
+            Här finns färdigdesignade knappar (med tooltips om så önskas) och dropdown. Knapparna använder Bootstraps standard btn-classer inuti en container med <code>class="small-action-btn-group"</code>. Det är möjligt att ha text inuti knapparna, även om det rent estetiskt blir bättre om man håller sig till ikoner.
+          </p>
+          <div class="alert alert-warning"><em>
+            Knapparna fungerar inte perfekt på mobil just nu, då de hoppar ner på en ny rad när containern blir för smal.</em>
+          </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row m-b-2">
+              <div class="col-md-5">
+                <h5>Tables</h5>
+                <p>Applicera classen <code>.small-action-btn-group</code> på den <code>&lt;td&gt;</code> som knapparna ska placeras inom.</p>
+                <div class="alert alert-warning"><em>När dropdowns är "open" så disablas <code>.table-responsive</code>s overflow-funktion. Det ser lite dåligt ut (speciellt på mobil) men det bör inte förstöra någon funktionalitet.</em></div>
+              </div>
+              <div class="col-md-7">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td class="small-action-btn-group">
+                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
+                          <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
+                          <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td class="small-action-btn-group">
+                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
+                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
+                          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td class="small-action-btn-group">
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h fa-fw"></i></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <h6 class="dropdown-header">Åtgärder</h6>
+                              <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Redigera</a>
+                              <a class="dropdown-item" href="#"><i class="fa fa-info fa-fw"></i> Mer information</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash fa-fw"></i> Ta bort</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row m-b-2">
+              <div class="col-md-5">
+                <h5>Cards</h5>
+                <p>Placera en div med classen <code>.small-action-btn-group</code> inuti den <code>&lt;div class="card-actions"&gt;</code> som knapparna ska placeras inom. Diven med <code>.card-actions</code> positionerar i sin tur knapparna på rätt ställe. <a href="/cardactions">Läs om Card actions</a>.</p>
+              </div>
+              <div class="col-md-7">
+
+                <div class="card">
+                  <h5 class="card-header">
+                    Card header
+                  </h5>
+                    <div class="card-actions">
+                      <div class="small-action-btn-group">
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Droppis</button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Länk</a>
+                            <a class="dropdown-item" href="#">Länk</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash fa-fw"></i> Ta bort</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-action-btn-group">
+                      <button type="button" class="btn btn-info"><i class="fa fa-refresh"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fa fa-times"></i></button>
+                      </div>
+                    </div>
+
+                  <div class="card-block">
+                    <p class="card-text">Card block</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <h5>Nestables</h5>
+                <p>Här placeras <code>.small-action-btn-group</code> inuti och i slutet av <code>&lt;li class="nestable-item"&gt;</code>.</p>
+              </div>
+              <div class="col-md-7 nestable" id="nestable">
+                        <ol class="nestable-list">
+                            <li class="nestable-item" data-id="1">
+                                <div class="nestable-handle">Item 1</div>
+                                <div class="small-action-btn-group">
+                                  <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
+                                  <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
+                                  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                                </div>
+                            </li>
+                            <li class="nestable-item" data-id="2">
+                                <div class="nestable-handle">Item 2</div>
+                                  <div class="small-action-btn-group">
+                                    <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
+                                    <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
+                                    <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                                  </div>
+                                <ol class="nestable-list">
+                                    <li class="nestable-item nestable-inverse nestable-info" data-id="3"><div class="nestable-handle">Item 3</div>
+                                      <div class="small-action-btn-group">
+                                        <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
+                                        <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
+                                        <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                                      </div></li>
+                                    <li class="nestable-item" data-id="4"><div class="nestable-handle">Item 4</div>
+                                      <div class="small-action-btn-group">
+                                        <div class="dropdown">
+                                          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h fa-fw"></i></button>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                            <h6 class="dropdown-header">Åtgärder</h6>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Redigera</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-info fa-fw"></i> Mer information</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash fa-fw"></i> Ta bort</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nestable-item" data-id="11">
+                                <div class="nestable-handle">Item 11
+                                  <div class="small-action-btn-group">
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Mer information">Knapp</button>
+                                    <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
+                                  </div>
+                                </div>
+                            </li>
+                        </ol>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">On/off switches</h3>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<%- include footer.ejs %>
+
+<script src="js/jquery.nestable.js"></script>
+
+<script>
+$('#nestable').nestable({
+  listNodeName    : 'ol',
+  itemNodeName    : 'li',
+  rootClass       : 'nestable',
+  listClass       : 'nestable-list',
+  itemClass       : 'nestable-item',
+  dragClass       : 'nestable-dragel',
+  handleClass     : 'nestable-handle',
+  collapsedClass  : 'nestable-collapsed',
+  placeClass      : 'nestable-placeholder',
+  noDragClass     : 'nestable-nodrag',
+  emptyClass      : 'nestable-empty',
+})
+.on('change', updateOutput);
+
+</script>

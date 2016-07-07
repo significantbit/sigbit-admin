@@ -4852,16 +4852,17 @@ body {
     padding: 0.375rem;
     opacity: 0.8;
     line-height: 1rem;
-    border: none; }
+    border: none;
+    box-shadow: none; }
     .small-action-btn-group .btn.btn-link {
       color: #373a3c;
       padding: 0.375rem 0.25rem; }
   .small-action-btn-group .dropdown-menu {
     font-size: 0.9em; }
-  .small-action-btn-group .dropdown-toggle {
+  .small-action-btn-group .dropdown-toggle i {
     font-size: 1.1em; }
-    .small-action-btn-group .dropdown-toggle:after {
-      display: none; }
+  .small-action-btn-group .dropdown-toggle:after {
+    display: none; }
 
 table .small-action-btn-group {
   display: table-cell;
@@ -5072,5 +5073,4 @@ table .small-action-btn-group {
   .nestable-inverse .small-action-btn-group .btn,
   .nestable-inverse button:before {
     color: white; }
-
 

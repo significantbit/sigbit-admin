@@ -11,6 +11,7 @@
     opacity: 0.8;
     line-height: 1rem;
     border: none;
+    box-shadow: none;
     &.btn-link {
       color: $gray-dark;
       padding: $spacer/4 $spacer/6;
@@ -21,11 +22,8 @@
     font-size: 0.9em;
   }
   .dropdown-toggle {
-    font-size: 1.1em;
-
-    &:after {
-      display: none;
-    }
+    i { font-size: 1.1em; }
+    &:after { display: none; }
   }
 
 }

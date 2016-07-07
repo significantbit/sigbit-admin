@@ -18,8 +18,8 @@ app.get('/', function(req, res) {
 
 });
 
-app.get('/tablebuttons', function(req, res) {
-  res.render('tablebuttons.ejs');
+app.get('/buttons', function(req, res) {
+  res.render('buttons.ejs');
 });
 app.get('/tablesort', function(req, res) {
   res.render('tablesort.ejs');
