@@ -4804,9 +4804,6 @@ body {
     top: 1.2rem;
     right: 1.2rem;
     font-size: 0.9em; }
-    .card .card-actions .btn {
-      font-size: 0.9em;
-      padding: 0.3rem 0.75rem; }
   .card .card-header .card-actions {
     position: absolute;
     top: 50%;
@@ -4848,6 +4845,23 @@ body {
 
 .card-gray-dark, .card-gray, .card-gray-light, .card-gray-lighter, .card-gray-lightest, .card-sidebar-bg, .card-header-navbar-bg {
   border: none; }
+
+.btn-circle {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem; }
+  .btn-circle.btn-sm, .btn-group-sm > .btn-circle.btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.875rem; }
+  .btn-circle.btn-lg, .btn-group-lg > .btn-circle.btn {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.25rem; }
+  .btn-circle.btn-xl {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 1.25rem; }
 
 .small-action-btn-group {
   display: inline-block;
