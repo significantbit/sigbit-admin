@@ -1,9 +1,6 @@
-
-
-.table-btn-group {
-  display: table-cell;
+.small-action-btn-group {
+  display: inline-block;
   padding: 0 !important;
-  vertical-align: middle !important;
   text-align: right !important;
 
   .btn {
@@ -14,6 +11,10 @@
     opacity: 0.7;
     line-height: 1rem;
     border: none;
+    &.btn-link {
+      color: $gray-dark;
+      padding: $spacer/4 $spacer/6;
+    }
   }
 
   .dropdown-menu {
@@ -27,4 +28,16 @@
     }
   }
 
+}
+
+
+table .small-action-btn-group {
+  display: table-cell;
+  vertical-align: middle !important;
+}
+
+.nestable .small-action-btn-group {
+  position: absolute;
+  top: $spacer/2;
+  right: $spacer/2;
 }

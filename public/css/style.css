@@ -4800,12 +4800,11 @@ body {
 .card-gray-dark, .card-gray, .card-gray-light, .card-gray-lighter, .card-gray-lightest, .card-sidebar-bg, .card-header-navbar-bg {
   border: none; }
 
-.table-btn-group {
-  display: table-cell;
+.small-action-btn-group {
+  display: inline-block;
   padding: 0 !important;
-  vertical-align: middle !important;
   text-align: right !important; }
-  .table-btn-group .btn {
+  .small-action-btn-group .btn {
     position: relative;
     margin: 0;
     font-size: 0.8em;
@@ -4813,12 +4812,24 @@ body {
     opacity: 0.7;
     line-height: 1rem;
     border: none; }
-  .table-btn-group .dropdown-menu {
+    .small-action-btn-group .btn.btn-link {
+      color: #373a3c;
+      padding: 0.375rem 0.25rem; }
+  .small-action-btn-group .dropdown-menu {
     font-size: 0.9em; }
-  .table-btn-group .dropdown-toggle {
+  .small-action-btn-group .dropdown-toggle {
     font-size: 1.1em; }
-    .table-btn-group .dropdown-toggle:after {
+    .small-action-btn-group .dropdown-toggle:after {
       display: none; }
+
+table .small-action-btn-group {
+  display: table-cell;
+  vertical-align: middle !important; }
+
+.nestable .small-action-btn-group {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem; }
 
 .js .inputfile {
   width: 0.1px;
