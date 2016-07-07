@@ -1,0 +1,112 @@
+<%- include header.ejs %>
+
+<!-- Page Content -->
+
+      <div class="container-fluid">
+        <div class="row page-header">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li>Egna komponenter</li>
+              <li class="active">Sort & Drag</li>
+            </ol>
+            <h1>Sort & Drag</h1>
+          </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <h3 class="card-header">Nestable</h3>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Använder jQuery-pluginet Nestable. <a href="http://dbushell.github.io/Nestable/" target="_blank">http://dbushell.github.io/Nestable/</a></p>
+                  <h5>Draggable Handles</h5>
+                  <p>Pluginet har också "Draggable Handles" som feature, vilket innebär att endast en ikon/knapp inuti list-objektet är dragbar istället för hela list-objektet.
+                  Det kan vara fördelaktigt att använda när Drag & Drop-funktionaliteten inte ska "presenteras" som den primära funktionen.
+                  Det finns dock inget exempel här eller någon CSS för det i dagsläget, men det finns från början i pluginet, så det bör inte ta jättelång
+                  tid att ordna.</p>
+                </div>
+                <div class="col-md-6 nestable" id="nestable">
+                          <ol class="nestable-list">
+                              <li class="nestable-item" data-id="1">
+                                  <div class="nestable-handle">Item 1</div>
+                              </li>
+                              <li class="nestable-item" data-id="2">
+                                  <div class="nestable-handle">Item 2</div>
+                                  <ol class="nestable-list">
+                                      <li class="nestable-item" data-id="3"><div class="nestable-handle">Item 3</div></li>
+                                      <li class="nestable-item" data-id="4"><div class="nestable-handle">Item 4</div></li>
+                                      <li class="nestable-item" data-id="5">
+                                          <div class="nestable-handle">Item 5</div>
+                                          <ol class="nestable-list">
+                                              <li class="nestable-item" data-id="6"><div class="nestable-handle">Item 6</div></li>
+                                              <li class="nestable-item" data-id="7"><div class="nestable-handle">Item 7</div></li>
+                                              <li class="nestable-item" data-id="8"><div class="nestable-handle">Item 8</div></li>
+                                          </ol>
+                                      </li>
+                                      <li class="nestable-item" data-id="9"><div class="nestable-handle">Item 9</div></li>
+                                      <li class="nestable-item" data-id="10"><div class="nestable-handle">Item 10</div></li>
+                                  </ol>
+                              </li>
+                              <li class="nestable-item" data-id="11">
+                                  <div class="nestable-handle">Item 11</div>
+                              </li>
+                              <li class="nestable-item" data-id="12">
+                                  <div class="nestable-handle">Item 12</div>
+                              </li>
+                          </ol>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <h3 class="card-header">Bootstrap HTML5 Sortable jQuery Plugin</h3>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Bootstrap HTML5 Sortable verkar lite cleanare än Nestable, men saknade funktionaliteten
+                  att kunna nesta objekt. Fast det kanske är möjligt här också med lite hack (jag vet inte jag kan inte Javascript å sånt coolt). Vill man inte nesta så känns det som att Bootstrap
+                  HTML5 Sortable är mer najs i alla fall.<br><br>
+                  <a href="http://psfpro.github.io/bootstrap-html5sortable" target="_blank">http://psfpro.github.io/bootstrap-html5sortable</a><br><br>
+                Mvh,<br>/Antonsson</p>
+              </div>
+              <div class="col-md-6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+    <!-- /#page-content-wrapper -->
+
+<%- include footer.ejs %>
+
+<script src="js/jquery.nestable.js"></script>
+
+<script>
+$('#nestable').nestable({
+  listNodeName    : 'ol',
+  itemNodeName    : 'li',
+  rootClass       : 'nestable',
+  listClass       : 'nestable-list',
+  itemClass       : 'nestable-item',
+  dragClass       : 'nestable-dragel',
+  handleClass     : 'nestable-handle',
+  collapsedClass  : 'nestable-collapsed',
+  placeClass      : 'nestable-placeholder',
+  noDragClass     : 'nestable-nodrag',
+  emptyClass      : 'nestable-empty',
+})
+.on('change', updateOutput);
+
+</script>

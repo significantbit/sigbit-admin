@@ -14,7 +14,7 @@
     display: inline-block;
     overflow: hidden;
     margin: 0 0 -5px 0;
-    @include border-radius($card-border-radius);
+    @include border-radius($border-radius);
 }
 
 

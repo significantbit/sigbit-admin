@@ -33,6 +33,9 @@ app.get('/pageheader', function(req, res) {
 app.get('/imageupload', function(req, res) {
   res.render('imageupload.ejs');
 });
+app.get('/sortdrag', function(req, res) {
+  res.render('sortdrag.ejs');
+});
 
 
 app.set('view engine', 'ejs');
