@@ -5099,3 +5099,19 @@ table .small-action-btn-group {
   .nestable-inverse button:before {
     color: white; }
 
+.sortable-placeholder {
+  background: #f7f7f9;
+  border: 2px dashed #818a91; }
+
+div[class*="sortable"] > * {
+  cursor: move; }
+
+/*
+This code snippet searches for divs containing classes with the word "sortable". This means
+every .card div inside a sortable container will inherit the properties and values.
+
+Divs with .card will disappear when included with sortable (jQuery plugin) because of its relative positioning. This will fix this.
+*/
+div[class*="sortable"] .card {
+  position: static; }
+

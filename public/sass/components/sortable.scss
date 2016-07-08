@@ -1,0 +1,20 @@
+
+.sortable-placeholder {
+  background: $gray-lightest;
+  border: 2px dashed $gray-light;
+}
+
+div[class*="sortable"] > * {
+  cursor: move;
+}
+
+/*
+This code snippet searches for divs containing classes with the word "sortable". This means
+every .card div inside a sortable container will inherit the properties and values.
+
+Divs with .card will disappear when included with sortable (jQuery plugin) because of its relative positioning. This will fix this.
+*/
+
+div[class*="sortable"] .card {
+  position: static;
+}
