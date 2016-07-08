@@ -21,8 +21,8 @@ app.get('/', function(req, res) {
 app.get('/buttons', function(req, res) {
   res.render('buttons.ejs');
 });
-app.get('/tablesort', function(req, res) {
-  res.render('tablesort.ejs');
+app.get('/actiontoolbar', function(req, res) {
+  res.render('actiontoolbar.ejs');
 });
 app.get('/colors', function(req, res) {
   res.render('colors.ejs');

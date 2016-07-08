@@ -4898,6 +4898,20 @@ table .small-action-btn-group {
   top: 0.75rem;
   right: 0.75rem; }
 
+.action-toolbar {
+  position: relative;
+  padding: 1.5rem 0; }
+  .action-toolbar::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .action-toolbar > * {
+    margin-left: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .action-toolbar > *:first-child {
+      margin-left: 0; }
+
 .js .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -5125,7 +5139,7 @@ Using Font Awesome classes. The .drag-handle content is the icon fa-ellipsis-v u
   color: rgba(55, 58, 60, 0.5); }
 
 .fa.drag-handle:before {
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   content: "\f142\f142"; }
 
 button .fa.drag-handle {
