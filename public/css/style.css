@@ -4863,6 +4863,9 @@ body {
     height: 6.5rem;
     font-size: 1.25rem; }
 
+.btn-floating {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); }
+
 .small-action-btn-group {
   display: inline-block;
   padding: 0 !important;
