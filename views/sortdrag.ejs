@@ -30,6 +30,7 @@
                 <div class="col-md-6 nestable" id="nestable">
                           <ol class="nestable-list">
                               <li class="nestable-item nestable-inverse nestable-primary" data-id="1">
+                                <i class="fa drag-handle"></i>
                                   <div class="nestable-handle">Item 1</div>
                                   <div class="small-action-btn-group">
                                     <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
@@ -38,6 +39,7 @@
                                   </div>
                               </li>
                               <li class="nestable-item" data-id="2">
+                                  <i class="fa drag-handle"></i>
                                   <div class="nestable-handle">Item 2</div>
                                     <div class="small-action-btn-group">
                                       <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
@@ -45,13 +47,13 @@
                                       <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
                                     </div>
                                   <ol class="nestable-list">
-                                      <li class="nestable-item" data-id="3"><div class="nestable-handle">Item 3</div>
+                                      <li class="nestable-item" data-id="3"><i class="fa drag-handle"></i><div class="nestable-handle">Item 3</div>
                                         <div class="small-action-btn-group">
                                           <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
                                           <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Redigera"><i class="fa fa-wrench fa-fw"></i></button>
                                           <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Ta bort"><i class="fa fa-times fa-fw"></i></button>
                                         </div></li>
-                                      <li class="nestable-item" data-id="4"><div class="nestable-handle">Item 4</div>
+                                      <li class="nestable-item" data-id="4"><i class="fa drag-handle"></i><div class="nestable-handle">Item 4</div>
                                         <div class="small-action-btn-group">
                                           <div class="dropdown">
                                             <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h fa-fw"></i></button>
@@ -66,18 +68,20 @@
                                         </div>
                                       </li>
                                       <li class="nestable-item" data-id="5">
+                                        <i class="fa drag-handle"></i>
                                           <div class="nestable-handle">Item 5</div>
                                           <ol class="nestable-list">
-                                              <li class="nestable-item" data-id="6"><div class="nestable-handle">Item 6</div></li>
-                                              <li class="nestable-item" data-id="7"><div class="nestable-handle">Item 7</div></li>
-                                              <li class="nestable-item" data-id="8"><div class="nestable-handle">Item 8</div></li>
+                                              <li class="nestable-item" data-id="6"><i class="fa drag-handle"></i><div class="nestable-handle">Item 6</div></li>
+                                              <li class="nestable-item" data-id="7"><i class="fa drag-handle"></i><div class="nestable-handle">Item 7</div></li>
+                                              <li class="nestable-item" data-id="8"><i class="fa drag-handle"></i><div class="nestable-handle">Item 8</div></li>
                                           </ol>
                                       </li>
-                                      <li class="nestable-item" data-id="9"><div class="nestable-handle">Item 9</div></li>
-                                      <li class="nestable-item" data-id="10"><div class="nestable-handle">Item 10</div></li>
+                                      <li class="nestable-item" data-id="9"><i class="fa drag-handle"></i><div class="nestable-handle">Item 9</div></li>
+                                      <li class="nestable-item" data-id="10"><i class="fa drag-handle"></i><div class="nestable-handle">Item 10</div></li>
                                   </ol>
                               </li>
                               <li class="nestable-item" data-id="11">
+                                <i class="fa drag-handle"></i>
                                   <div class="nestable-handle nestable-warning-outline">Item 11
                                     <div class="small-action-btn-group">
                                       <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Mer information"><i class="fa fa-info fa-fw"></i></button>
@@ -87,6 +91,7 @@
                                   </div>
                               </li>
                               <li class="nestable-item nestable-inverse nestable-success" data-id="12">
+                                <i class="fa drag-handle"></i>
                                   <div class="nestable-handle">Item 12</div>
                               </li>
                           </ol>
@@ -114,11 +119,11 @@
               <div class="col-md-6">
                 <h4>Sortable List Group</h4>
                 <ul class="list-group list-group-sortable">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item"><i class="fa drag-handle"></i> Cras justo odio</li>
+                    <li class="list-group-item"><i class="fa drag-handle"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><i class="fa drag-handle"></i> Morbi leo risus</li>
+                    <li class="list-group-item"><i class="fa drag-handle"></i> Porta ac consectetur ac</li>
+                    <li class="list-group-item"><i class="fa drag-handle"></i> Vestibulum at eros</li>
                 </ul>
               </div>
             </div>
@@ -128,7 +133,7 @@
                   Sortable card grid<br>
                   <small class="text-muted"><em><i class="fa fa-info-circle"></i> Håll nere och dra i objekten för att ändra ordning</em></small>
                 </h4>
-                <p class="alert alert-danger">Att sortera i grid fungerar riktigt dåligt i dagsläget när man ska flytta runt objekt, på grund av positionering och höjden på objekten. Borde gå att lösa, får kolla på det.</p>
+                <p class="alert alert-danger">Att sortera i grid fungerar dåligt i dagsläget när man ska flytta runt objekt, på grund av positionering och höjden på objekten. Borde gå att lösa, får kolla på det.</p>
               </div>
 
             </div>

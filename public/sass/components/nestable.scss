@@ -19,7 +19,7 @@
 .nestable-handle {
     display: block;
     margin: $spacer/2 0;
-    padding: $spacer/2;
+    padding: $spacer/2 $spacer/2 $spacer/2 $spacer*1.6666;
     background-color: $gray-lighter;
     border: 1px solid transparent;
     cursor: move;
@@ -36,7 +36,7 @@
   cursor: pointer;
   float: left;
   width: 32px;
-  margin: 0 $spacer/5 0;
+  margin: 0 $spacer/10 0 $spacer*1.5;
   padding: $spacer/2 0 $spacer/2 $spacer/2;
   text-indent: -9999px;
   white-space: nowrap;
@@ -52,7 +52,7 @@
   font-family: 'FontAwesome';
   font-size: 0.9em;
   content: '\f067'; // Font Awesome plus icon
-  color: $gray-light;
+  color: rgba($gray-dark,0.5);
   text-indent: 0;
 }
 .nestable-item > button[data-action="collapse"]:before {
@@ -89,6 +89,15 @@
 .nestable-dragel .nestable-handle {
     @include box-shadow(0 6px 12px rgba(0,0,0,.175));
 }
+
+// Drag handle (main styling is done in sortable.scss)
+
+.nestable-item .fa.drag-handle {
+  position: absolute;
+  top: $spacer/1.3333;
+  left: $spacer/1.3333;
+}
+
 
 // Background variants
 .nestable-primary .nestable-handle {
