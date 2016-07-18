@@ -673,16 +673,16 @@ $pre-scrollable-max-height:   340px !default;
 // Logotypes
 // On mobile the sidebar logotype is replaced with the header navbar logotype
 
-$sidebar-logotype:        'http://d1i5cf397ceebi.cloudfront.net/assets/main_logo-4ab62363897ec9168acbb5507e91e7db4910b8006237f4b1be1fb06339a0395a.png';
-$header-navbar-logotype:  'http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg';
+$sidebar-logotype:        'http://d1i5cf397ceebi.cloudfront.net/assets/main_logo-4ab62363897ec9168acbb5507e91e7db4910b8006237f4b1be1fb06339a0395a.png' !default;
+$header-navbar-logotype:  'http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg' !default;
 
 // Sidebar
 
-$sidebar-width:   250px;
-$sidebar-bg:      #2d2f40;
+$sidebar-width:   250px !default;
+$sidebar-bg:      #2d2f40 !default;
 
 // Header-navbar
 
-$header-navbar-height:          60px;
-$header-navbar-bg:              white;
-$header-navbar-bottom-border:   darken($gray-lighter,10%);
+$header-navbar-height:          60px !default;
+$header-navbar-bg:              white !default;
+$header-navbar-bottom-border:   darken($gray-lighter,10%) !default;
