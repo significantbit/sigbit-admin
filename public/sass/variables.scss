@@ -673,11 +673,14 @@ $pre-scrollable-max-height:   340px !default;
 // Logotypes
 // On mobile the sidebar logotype is replaced with the header navbar logotype
 
-$sidebar-logotype:            "http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg" !default;
-$sidebar-logotype-position:   $spacer center !default;
-$sidebar-logotype-size:       auto 50% !default;
+$sidebar-logotype:                  "http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg" !default;
+$sidebar-logotype-position:         $spacer center !default;
+$sidebar-logotype-size:             auto 50% !default;
 
-$header-navbar-logotype:      $sidebar-logotype !default;
+$header-navbar-logotype:            $sidebar-logotype !default;
+$header-navbar-logotype-width:      25% !default;
+$header-navbar-logotype-height:     65% !default;
+
 
 // Sidebar
 
@@ -700,8 +703,15 @@ $sidebar-nav-link-color-active:     white !default;
 $sidebar-nav-submenu-bg:            darken($sidebar-bg,6%) !default;
 $sidebar-nav-submenu-link-bg-hover: darken($sidebar-bg,3%) !default;
 
+
 // Header-navbar
 
 $header-navbar-height:          60px !default;
+$header-navbar-padding:         $spacer/2 $spacer $spacer/2 0 !default;
 $header-navbar-bg:              white !default;
-$header-navbar-bottom-border:   darken($gray-lighter,10%) !default; // border-color ist för bottom-border
+$header-navbar-border-color:    darken($gray-lighter,10%) !default; // border-color ist för bottom-border
+
+
+// Action toolbar
+
+$action-toolbar-padding: $spacer 0 !default;
