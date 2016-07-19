@@ -1,6 +1,5 @@
 
 .page-header {
-  // background: rgba(red,0.1);
   padding-bottom: $spacer;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -22,9 +21,15 @@
   }
 
   .page-header-actions {
-    position: absolute;
-    right: $spacer/1.5;
-    top: 50%;
-    @include transform(translateY(-50%));
+    margin-top: $spacer;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      right: $spacer/1.5;
+      top: 50%;
+      @include transform(translateY(-50%));
+      margin-top: 0;
+    }
   }
+
 }

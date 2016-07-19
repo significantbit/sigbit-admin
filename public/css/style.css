@@ -4792,14 +4792,18 @@ body {
   .page-header h1 {
     margin: 0; }
   .page-header .page-header-actions {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    margin-top: 1.5rem; }
+    @media (min-width: 992px) {
+      .page-header .page-header-actions {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: 0; } }
 
 .card {
   margin-bottom: 1.5rem; }
