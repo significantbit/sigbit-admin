@@ -63,6 +63,7 @@ body {
         display: block;
         text-decoration: none;
         color: $sidebar-nav-link-color;
+        @include transition(all .2s ease);
 
         &:hover {
             text-decoration: none;
@@ -100,6 +101,7 @@ body {
     }
     a.active {
       color: $sidebar-nav-link-color-active;
+      background: $sidebar-nav-link-bg-active;
     }
 
     ul.submenu {
