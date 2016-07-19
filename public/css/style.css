@@ -4609,7 +4609,8 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  color: #373a3c; }
   #header-navbar #sidebar-toggle {
     position: absolute;
     top: 0;
@@ -4703,7 +4704,8 @@ body {
     position: relative;
     display: block;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease; }
     .sidebar-nav li a:hover {
       text-decoration: none;
       color: white;
@@ -4738,7 +4740,8 @@ body {
         -o-transform: translateY(-50%) rotate(90deg);
         transform: translateY(-50%) rotate(90deg); }
   .sidebar-nav li a.active {
-    color: white; }
+    color: white;
+    background: transparent; }
   .sidebar-nav li ul.submenu {
     background: #20222e;
     padding: 0; }
