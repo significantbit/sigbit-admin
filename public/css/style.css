@@ -4606,11 +4606,13 @@ a.bg-danger:focus, a.bg-danger:hover {
   padding: 0.75rem 1.5rem 0.75rem 0;
   background: white;
   border-bottom: 1px solid #d0d5d8;
+  font-size: 0.9em;
+  color: #373a3c;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  font-size: 0.9em;
-  color: #373a3c; }
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
   #header-navbar #sidebar-toggle {
     position: absolute;
     top: 0;
@@ -4718,16 +4720,16 @@ body {
       margin-right: 0.75rem; }
     .sidebar-nav li a .fa-chevron-right {
       position: absolute;
-      right: 1.5rem;
       top: 50%;
+      right: 1.5rem;
       -webkit-transform: translateY(-50%) rotate(0deg);
       -moz-transform: translateY(-50%) rotate(0deg);
       -ms-transform: translateY(-50%) rotate(0deg);
       -o-transform: translateY(-50%) rotate(0deg);
       transform: translateY(-50%) rotate(0deg);
+      display: inline-block;
       width: 10px;
       height: 10px;
-      display: inline-block;
       margin: 0;
       font-size: 0.8em;
       transition: all 0.2s ease; }
@@ -4782,6 +4784,8 @@ body {
   padding-bottom: 1.5rem;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   .page-header .breadcrumb {
     padding: 0;
@@ -4796,8 +4800,8 @@ body {
     @media (min-width: 992px) {
       .page-header .page-header-actions {
         position: absolute;
-        right: 1rem;
         top: 50%;
+        right: 1rem;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -5023,12 +5027,12 @@ table .small-action-btn-group {
   width: 32px;
   margin: 0 0.15rem 0 2.25rem;
   padding: 0.75rem 0 0.75rem 0.75rem;
-  text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
   border: 0;
   z-index: 99;
-  background: transparent; }
+  background: transparent;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap; }
 
 .nestable-item > button:before {
   display: block;
