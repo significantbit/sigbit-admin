@@ -4935,10 +4935,8 @@ table .small-action-btn-group {
 .inputfile + label {
   white-space: nowrap;
   cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0 0 -5px 0;
-  border-radius: 0.25rem; }
+  display: block;
+  margin: 0; }
 
 .no-js .inputfile + label {
   display: none; }
