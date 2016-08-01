@@ -1,0 +1,188 @@
+<%- include header.ejs %>
+
+<!-- Page Content -->
+
+<div class="container-fluid">
+  <div class="row page-header">
+    <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li>Bootstraps komponenter</li>
+        <li class="active">Knappar</li>
+      </ol>
+      <h1>Formulär</h1>
+    </div>
+  </div>
+
+  <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Formulärmönster</h3>
+          <blockquote class="blockquote">
+            <p class="m-b-0">Life is short. No one wants to fill out a form. Be conversational.</p>
+            <footer class="blockquote-footer"><a href="https://uxdesign.cc/design-better-forms-96fadca0f49c#.xx4so5nfm">Design Better Forms (uxdesign.cc)</a></footer>
+          </blockquote>
+        </div>
+          <div class="container-fluid">
+            <div class="row m-b-3">
+              <div class="col-md-4">
+                <h5>Grundstruktur</h5>
+                <p>Formulär layoutas nästa exakt så som Bootstraps egna exempel är uppbyggda. Tanken är även att vi ska försöka följa alla Dos and Don'ts från
+                  artikeln <a href="https://uxdesign.cc/design-better-forms-96fadca0f49c#.xx4so5nfm">Design Better Forms (uxdesign.cc)</a>.
+              </div>
+              <div class="col-md-8">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Mailadress</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mailadress">
+                    <small id="emailHelp" class="form-text text-muted">Korta hjälptexter placeras under inputen inuti en <code>&lt;small class="form-text text-muted"&gt;&lt;/small&gt;</code>.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Lösenord</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Lösenord">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Telefonnummer</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="071-234 56 78">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Example select</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Example textarea <span class="text-muted">- Ej obligatoriskt</span></label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleSelect2" class="col-xs-12 col-form-label">Födelsedatum</label>
+                    <div class="col-xs-4">
+                      <select class="form-control" id="exampleSelect2">
+                        <option>Dag</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-4">
+                      <select class="form-control" id="exampleSelect3">
+                        <option>Månad</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-4">
+                      <select class="form-control" id="exampleSelect4">
+                        <option>År</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Gatuadress</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gatuadress">
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-8">
+                      <label for="exampleInputPassword1">Ort</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ort">
+                    </div>
+                    <div class="col-xs-4">
+                      <label for="exampleInputPassword1">Postnummer</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="file" name="file-6[]" id="exampleInputFile" class="inputfile form-control-file" aria-describedby="fileHelp">
+                    <label for="exampleInputFile">
+                      <a type="button" class="btn btn-secondary"><i class="fa fa-upload fa-fw"></i> <span>Ladda upp fil</span></a>
+                    </label>
+                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                  </div>
+                  <fieldset class="form-group">
+                    <legend>Radio buttons</legend>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Option one is this and that&mdash;be sure to include why it's great
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Option two can be something else and selecting it will deselect option one
+                      </label>
+                    </div>
+                    <div class="radio disabled">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                        Option three is disabled
+                      </label>
+                    </div>
+                  </fieldset>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Spara ändringar</button>
+                  <button type="submit" class="btn btn-secondary">Ångra</button>
+                </form>
+              </div>
+            </div>
+            <div class="row m-b-3">
+              <div class="col-md-4">
+                <h5>Obligatoriska/valfria fält</h5>
+                <p>Markera inte obligatoriska fält med en asterisk (*).
+                  Lägg istället till en <code>&lt;span class="text-muted"&gt;- Ej obligatoriskt&lt;/span&gt;</code> inuti fältets label,
+                  efter label-namnet för att markera ett valfritt fält.</p>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Mailadress <span class="text-muted">- Ej obligatoriskt</span></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mailadress">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Text <span class="text-muted">- Ej obligatoriskt</span></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Form validation</h5>
+                <p>Om möjligt (Hej alla utvecklare): Berätta redan innan man trycker på "submit" att något är fel/rätt för att effektivisera flödet för användaren.</p>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group has-success">
+                  <label class="col-form-label" for="inputSuccess1">Mailadress</label>
+                  <input type="text" class="form-control form-control-success" id="inputSuccess1" value="info@significantbit.se">
+                </div>
+                <div class="form-group has-warning">
+                  <label class="col-form-label" for="inputWarning1">Lösenord</label>
+                  <input type="password" class="form-control form-control-warning" id="inputWarning1" value="lösen ord">
+                  <div class="form-control-feedback">Svagt lösenord!</div>
+                </div>
+                <div class="form-group has-danger">
+                  <label class="col-form-label" for="inputDanger1">För- och efternamn</label>
+                  <input type="text" class="form-control form-control-danger" id="inputDanger1" value="Anders And3rson">
+                  <div class="form-control-feedback">Skriv alltid ut vad som är fel, så användaren förstår vad som behöver göras.</div>
+                  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<%- include footer.ejs %>

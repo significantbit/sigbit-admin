@@ -36,6 +36,9 @@ app.get('/imageupload', function(req, res) {
 app.get('/sortdrag', function(req, res) {
   res.render('sortdrag.ejs');
 });
+app.get('/forms', function(req, res) {
+  res.render('forms.ejs');
+});
 
 
 app.set('view engine', 'ejs');
