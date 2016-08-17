@@ -4938,6 +4938,9 @@ table .small-action-btn-group {
   display: block;
   margin: 0; }
 
+.inputfile + label * {
+  pointer-events: none !important; }
+
 .no-js .inputfile + label {
   display: none; }
 
@@ -5165,4 +5168,126 @@ relative positioning. This will fix this. But it may screw up other things.
 */
 div[class*="sortable"] .card {
   position: static; }
+
+.toggle {
+  /* wrapper label */
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  margin: 0; }
+  .toggle input {
+    display: none; }
+  .toggle .toggle-slider {
+    /* The slider */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #eceeef;
+    border-radius: 2rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12); }
+    .toggle .toggle-slider:before {
+      position: absolute;
+      bottom: 0.25rem;
+      left: 0.25rem;
+      content: "";
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: white; }
+  .toggle .toggle-text {
+    position: absolute;
+    display: inline-block;
+    line-height: 2rem;
+    font-size: 0.8em;
+    font-weight: normal; }
+    .toggle .toggle-text.on {
+      left: 11px;
+      color: white;
+      visibility: hidden;
+      opacity: 0; }
+    .toggle .toggle-text.off {
+      right: 11px;
+      color: #818a91;
+      opacity: 1; }
+  .toggle input:checked + .toggle-slider {
+    /* Checked state */ }
+    .toggle input:checked + .toggle-slider:before {
+      -webkit-transform: translateX(2rem);
+      -moz-transform: translateX(2rem);
+      -ms-transform: translateX(2rem);
+      -o-transform: translateX(2rem);
+      transform: translateX(2rem); }
+    .toggle input:checked + .toggle-slider .toggle-text.on {
+      visibility: visible;
+      opacity: 1; }
+    .toggle input:checked + .toggle-slider .toggle-text.off {
+      visibility: hidden;
+      opacity: 0; }
+  .toggle input:focus + .toggle-slider {
+    /* Focused state */
+    box-shadow: 0 0 1px #10CFBD; }
+  .toggle .toggle-slider,
+  .toggle .toggle-slider:before,
+  .toggle .toggle-text {
+    transition: all 0.2s ease-in-out; }
+
+.toggle-sm {
+  width: 3rem;
+  height: 1.5rem; }
+  .toggle-sm .toggle-slider {
+    /* The slider */
+    border-radius: 1.5rem; }
+    .toggle-sm .toggle-slider:before {
+      height: 1rem;
+      width: 1rem; }
+  .toggle-sm .toggle-text {
+    line-height: 1.5rem; }
+  .toggle-sm input:checked + .toggle-slider:before {
+    -webkit-transform: translateX(1.5rem);
+    -moz-transform: translateX(1.5rem);
+    -ms-transform: translateX(1.5rem);
+    -o-transform: translateX(1.5rem);
+    transform: translateX(1.5rem); }
+
+.toggle-lg {
+  width: 5rem;
+  height: 2.5rem; }
+  .toggle-lg .toggle-slider {
+    /* The slider */
+    border-radius: 2.5rem; }
+    .toggle-lg .toggle-slider:before {
+      height: 2rem;
+      width: 2rem; }
+  .toggle-lg .toggle-text {
+    line-height: 2.5rem; }
+  .toggle-lg input:checked + .toggle-slider:before {
+    -webkit-transform: translateX(2.5rem);
+    -moz-transform: translateX(2.5rem);
+    -ms-transform: translateX(2.5rem);
+    -o-transform: translateX(2.5rem);
+    transform: translateX(2.5rem); }
+
+.toggle-primary input:checked + .toggle-slider {
+  /* Checked state */
+  background-color: #6D5CAE; }
+
+.toggle-success input:checked + .toggle-slider {
+  /* Checked state */
+  background-color: #10CFBD; }
+
+.toggle-info input:checked + .toggle-slider {
+  /* Checked state */
+  background-color: #48B0F7; }
+
+.toggle-warning input:checked + .toggle-slider {
+  /* Checked state */
+  background-color: #f7cf5e; }
+
+.toggle-danger input:checked + .toggle-slider {
+  /* Checked state */
+  background-color: #F55753; }
 

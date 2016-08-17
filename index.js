@@ -39,6 +39,9 @@ app.get('/sortdrag', function(req, res) {
 app.get('/forms', function(req, res) {
   res.render('forms.ejs');
 });
+app.get('/toggles', function(req, res) {
+  res.render('toggles.ejs');
+});
 
 
 app.set('view engine', 'ejs');

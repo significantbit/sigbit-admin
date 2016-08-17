@@ -1,0 +1,104 @@
+<%- include header.ejs %>
+
+<!-- Page Content -->
+
+      <div class="container-fluid">
+        <div class="row page-header">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li>Egna komponenter</li>
+              <li class="active">Toggle buttons</li>
+            </ol>
+            <h1>Toggle buttons</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h3>Toggle buttons</h3>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Dessa knappar utgår från <a href="http://www.w3schools.com/howto/howto_css_switch.asp">W3schools Toggle Switch</a>.
+                      I grund och botten är det bara en checkbox som är stylad med CSS.<br><br>
+                      Knapparna är dessutom Bootstrapifierade och CSS-classerna fungerar lite på samma sätt som buttons.
+                      Det går t.ex. att använda <code>.toggle-danger</code> och <code>.toggle-lg</code>.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+
+                        <h5>On/off-text</h5>
+                        <label class="toggle toggle-primary">
+                          <input type="checkbox" checked>
+                          <div class="toggle-slider">
+                            <span class="toggle-text on">On</span>
+                            <span class="toggle-text off">Off</span>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="col-xs-6">
+
+                        <h5>Utan text</h5>
+                        <label class="toggle toggle-primary">
+                          <input type="checkbox">
+                          <div class="toggle-slider"></div>
+                        </label>
+
+                      </div>
+                      <div class="col-xs-6 m-t-1">
+
+                        <h5>Andra färger</h5>
+                        <label class="toggle toggle-success m-b-1">
+                          <input type="checkbox" checked>
+                          <div class="toggle-slider">
+                          </div>
+                        </label>
+                        <label class="toggle toggle-info m-b-1">
+                          <input type="checkbox" checked>
+                          <div class="toggle-slider">
+                          </div>
+                        </label>
+                        <label class="toggle toggle-warning m-b-1">
+                          <input type="checkbox" checked>
+                          <div class="toggle-slider">
+                          </div>
+                        </label>
+                        <label class="toggle toggle-danger">
+                          <input type="checkbox" checked>
+                          <div class="toggle-slider">
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="col-xs-6 m-t-1">
+
+                        <h5>Storlekar (sm och lg)</h5>
+                        <label class="toggle toggle-primary toggle-sm m-b-1">
+                          <input type="checkbox">
+                          <div class="toggle-slider"></div>
+                        </label>
+                        <label class="toggle toggle-primary toggle-lg">
+                          <input type="checkbox">
+                          <div class="toggle-slider"></div>
+                        </label>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+<%- include footer.ejs %>
