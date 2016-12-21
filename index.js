@@ -44,7 +44,14 @@ app.get('/toggles', function(req, res) {
 });
 
 
+app.get('/devise/login', function(req, res) {
+  res.render('login.ejs');
+});
+
+
+
 app.set('view engine', 'ejs');
+app.set('views', [__dirname + '/views', __dirname + '/views/devise']);
 app.use(express.static('public'));
 
 server.listen(3000, 'localhost');
