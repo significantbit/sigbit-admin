@@ -16,6 +16,8 @@ var config = {
   bowerDir: './bower_components'
 }
 
+var BROWSER_SYNC_RELOAD_DELAY = 3000;
+
 gulp.task('sass', function () {
   return gulp.src('./public/**/*.scss')
     .pipe(sass({
@@ -58,7 +60,7 @@ gulp.task('browser-sync', ['nodemon'], function () {
 
     // informs browser-sync to use the following port for the proxied app
     // notice that the default port is 3000, which would clash with our expressjs
-    port: 4000,
+    port: 3201,
 
     // open the proxied app in chrome
     browser: ['google-chrome']
@@ -75,6 +77,7 @@ gulp.task("scripts", function () {
         __dirname + "/node_modules/jquery/dist",
         __dirname + "/node_modules/bootstrap/dist/js",
         __dirname + "/node_modules/tether/dist/js",
+        __dirname + "/public/js/libs",
       ]
     }))
     .on('error', console.log)

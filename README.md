@@ -19,4 +19,4 @@ Run the following commands to start
 
 `gulp`
 
-This will start a server on `localhost:4000` (default) where you can develop on
+This will start a server on `localhost:3200` (default) where you can develop on
