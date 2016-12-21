@@ -4943,6 +4943,47 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+.devise-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #6D5CAE; }
+  .devise-wrapper .devise-container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem; }
+  .devise-wrapper a.previous-page {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: white; }
+    .devise-wrapper a.previous-page i {
+      margin-right: 0.75rem; }
+
 #header-navbar {
   height: 60px;
   padding: 0.75rem 1.5rem 0.75rem 0;
@@ -4985,7 +5026,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     transform: translate(-50%, -50%);
     width: 25%;
     height: 60%;
-    background: transparent url("http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg") no-repeat center center;
+    background: transparent url("https://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg") no-repeat center center;
     background-size: contain; }
     @media (max-width: 767px) {
       #header-navbar .navbar-brand {
@@ -5112,7 +5153,7 @@ body {
   display: block;
   width: 100%;
   height: 60px;
-  background: #222431 url("http://www.significantbit.se/assets/logotype-white-3c67dd843e7b7c0f1432300d1226e6af0f655e0dff2b26f098659bb4fda48d8a.svg") no-repeat center center;
+  background: #222431 url("https://www.significantbit.se/assets/logotype-white-3c67dd843e7b7c0f1432300d1226e6af0f655e0dff2b26f098659bb4fda48d8a.svg") no-repeat center center;
   background-size: auto 35%;
   border-bottom: 1px solid black; }
 

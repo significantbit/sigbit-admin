@@ -13,7 +13,10 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,700italic,900,900italic,600,600italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -47,6 +50,7 @@
         </li>
 
         <li class="nav-item"><a href="./colors" class="nav-link">Standardfärger</a></li>
+        <li class="nav-item"><a href="./devise/login" class="nav-link">Logga in</a></li>
 
         <li class="nav-item"><a href="#ui-element" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-element"><i class="fa fa-list-ul" aria-hidden="true"></i> Dropdown <i class="fa fa-chevron-right"></i></a>
           <ul class="submenu collapse" id="ui-element">
@@ -195,7 +199,27 @@
                               </li>
                           </ol>
 
-
+                      
+                </div>
+                <div class="col-md-12">
+                <h3>Exempelkod</h3>
+                <pre><code>
+  var updateOutput = function() { console.log('UPDATED'); }
+  $('#nestable').nestable({
+    listNodeName    : 'ol',
+    itemNodeName    : 'li',
+    rootClass       : 'nestable',
+    listClass       : 'nestable-list',
+    itemClass       : 'nestable-item',
+    dragClass       : 'nestable-dragel',
+    handleClass     : 'nestable-handle',
+    collapsedClass  : 'nestable-collapsed',
+    placeClass      : 'nestable-placeholder',
+    noDragClass     : 'nestable-nodrag',
+    emptyClass      : 'nestable-empty',
+    })
+  .on('change', updateOutput);
+                </code></pre>
                 </div>
               </div>
             </div>
@@ -225,6 +249,16 @@
                     <li class="list-group-item"><i class="fa drag-handle"></i> Vestibulum at eros</li>
                 </ul>
               </div>
+              <div class="col-md-12">
+                <h3>Exempelkod</h3>
+                <pre><code>
+    $('.card-sortable').sortable({
+      placeholderClass: 'col-sm-6 col-lg-4'
+    }).bind('sortupdate', function(e, ui) {
+      console.log('updated');
+    });
+                </code></pre>
+                </div>
             </div>
             <div class="row m-b-1">
               <div class="col-lg-12">
@@ -365,50 +399,45 @@
 </html>
 
 
-<script src="js/jquery.nestable.js"></script>
-
 <script>
-$('#nestable').nestable({
-  listNodeName    : 'ol',
-  itemNodeName    : 'li',
-  rootClass       : 'nestable',
-  listClass       : 'nestable-list',
-  itemClass       : 'nestable-item',
-  dragClass       : 'nestable-dragel',
-  handleClass     : 'nestable-handle',
-  collapsedClass  : 'nestable-collapsed',
-  placeClass      : 'nestable-placeholder',
-  noDragClass     : 'nestable-nodrag',
-  emptyClass      : 'nestable-empty',
-})
-.on('change', updateOutput);
-
-</script>
-
-<script src="js/jquery.sortable.min.js"></script>
-<script>
+$(document).ready(function() {
   $(function() {
-          $('.card-sortable').sortable({
-                placeholderClass: 'col-sm-6 col-lg-4'
-            });
-            $('.media-object-sortable').sortable({
-              placeholderClass: 'media',
-              forcePlaceholderSize: true
-          });
-          $('.list-group-sortable').sortable({
-              placeholderClass: 'list-group-item',
-          });
-        /*  $('.list-group-sortable-exclude').sortable({
-              placeholderClass: 'list-group-item',
-              items: ':not(.disabled)'
-          });
-          $('.list-group-sortable-handles').sortable({
-              placeholderClass: 'list-group-item',
-              handle: 'span'
-          });
-          $('.list-group-sortable-connected').sortable({
-              placeholderClass: 'list-group-item',
-              connectWith: '.connected'
-          });*/
+    var updateOutput = function() { console.log('UPDATED'); }
+    $('#nestable').nestable({
+      listNodeName    : 'ol',
+      itemNodeName    : 'li',
+      rootClass       : 'nestable',
+      listClass       : 'nestable-list',
+      itemClass       : 'nestable-item',
+      dragClass       : 'nestable-dragel',
+      handleClass     : 'nestable-handle',
+      collapsedClass  : 'nestable-collapsed',
+      placeClass      : 'nestable-placeholder',
+      noDragClass     : 'nestable-nodrag',
+      emptyClass      : 'nestable-empty',
+    })
+    .on('change', updateOutput);
   });
+  $(function() {
+    $('.card-sortable').sortable({
+      placeholderClass: 'col-sm-6 col-lg-4'
+    }).bind('sortupdate', function(e, ui) {
+      console.log('updated');
+    });
+
+    $('.media-object-sortable').sortable({
+      placeholderClass: 'media',
+      forcePlaceholderSize: true
+    }).bind('sortupdate', function(e, ui) {
+      console.log('updated');
+    });
+
+    $('.list-group-sortable').sortable({
+      placeholderClass: 'list-group-item',
+    })
+    .bind('sortupdate', function(e, ui) {
+      console.log('updated');
+    });
+  });
+});
 </script>
