@@ -1,5 +1,7 @@
 ## Sigbit-admin
 
+#### [Live demo/docs](https://significantbit.github.io/sigbit-admin/)
+
 ### Installation
 To install repository run the following command
 
@@ -17,4 +19,15 @@ Run the following commands to start
 
 `gulp`
 
-This will start a server on `localhost:4000` (default) where you can develop on
+This will start a server on `localhost:3200` (default) where you can develop on
+
+### Github page
+
+To deploy to gh-pages run the following commands
+
+```bash
+gulp prod
+gulp deploy
+```
+
+It will build and deploy lastest version to the gh-pages branch

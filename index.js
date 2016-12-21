@@ -57,7 +57,7 @@ app.set('view engine', 'ejs');
 app.set('views', [__dirname + '/views', __dirname + '/views/devise']);
 app.use(express.static('public'));
 
-server.listen(3000, 'localhost');
+server.listen(3200, 'localhost');
 server.on('listening', function() {
   console.log('Express server started on port %s at %s', server.address().port, server.address().address);
 });

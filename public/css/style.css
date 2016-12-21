@@ -5026,7 +5026,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     transform: translate(-50%, -50%);
     width: 25%;
     height: 60%;
-    background: transparent url("http://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg") no-repeat center center;
+    background: transparent url("https://www.significantbit.se/assets/logotype-2b1fd527c1bed395289dcef8bdf490100f0c3303786007178694802beb83fbc8.svg") no-repeat center center;
     background-size: contain; }
     @media (max-width: 767px) {
       #header-navbar .navbar-brand {
@@ -5170,7 +5170,7 @@ body {
   display: block;
   width: 100%;
   height: 60px;
-  background: #222431 url("http://www.significantbit.se/assets/logotype-white-3c67dd843e7b7c0f1432300d1226e6af0f655e0dff2b26f098659bb4fda48d8a.svg") no-repeat center center;
+  background: #222431 url("https://www.significantbit.se/assets/logotype-white-3c67dd843e7b7c0f1432300d1226e6af0f655e0dff2b26f098659bb4fda48d8a.svg") no-repeat center center;
   background-size: auto 35%;
   border-bottom: 1px solid black; }
 
