@@ -8,6 +8,8 @@ var nodemon = require('gulp-nodemon');
 var include = require("gulp-include");
 var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
+var ghPages = require('gulp-gh-pages');
+var ejs = require("gulp-ejs");
 
 var config = {
   sassPath: './resources/sass',
@@ -84,7 +86,12 @@ gulp.task('default', ['browser-sync', 'scripts'], function () {
   gulp.watch('views/**/*.ejs', ['bs-reload']);
 });
 
-
+gulp.task('deploy', ['prod'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({
+      "remoteUrl" : "git@github.com:significantbit/sigbit-admin.git"
+    }));
+});
 
 gulp.task('prod', function () {
   gulp.src("public/js/scripts.js")
@@ -96,6 +103,8 @@ gulp.task('prod', function () {
       ]
     }))
     .on('error', console.log)
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest("dist"))
     .pipe(concat('sigbit-admin.js'))
     .pipe(gulp.dest("dist"))
     .pipe(concat('sigbit-admin.min.js'))
@@ -107,9 +116,17 @@ gulp.task('prod', function () {
       includePaths: [require('node-bourbon').includePaths],
       errLogToConsole: true
     }).on('error', sass.logError))
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(concat('sigbit-admin.css'))
     .pipe(gulp.dest('dist'))
     .pipe(concat('sigbit-admin.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest('dist'));
+
+  gulp.src("./views/*.ejs")
+    .pipe(ejs({
+      msg: "Hello Gulp!",
+    },{ext:'.html'}))
+    .pipe(gulp.dest("./dist"));
 })
