@@ -103,6 +103,7 @@ gulp.task('prod', function () {
         __dirname + "/node_modules/jquery/dist",
         __dirname + "/node_modules/bootstrap/dist/js",
         __dirname + "/node_modules/tether/dist/js",
+        __dirname + "/public/js/libs",
       ]
     }))
     .on('error', console.log)
@@ -127,7 +128,7 @@ gulp.task('prod', function () {
     .pipe(cleanCSS())
     .pipe(gulp.dest('dist'));
 
-  gulp.src("./views/*.ejs")
+  gulp.src("./views/**/*.ejs")
     .pipe(ejs({
       msg: "Hello Gulp!",
     },{ext:'.html'}))
