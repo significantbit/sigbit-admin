@@ -1,5 +1,7 @@
 ## Sigbit-admin
 
+#### [Live demo/docs](https://significantbit.github.io/sigbit-admin/)
+
 ### Installation
 To install repository run the following command
 
