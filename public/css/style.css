@@ -4976,6 +4976,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .devise-wrapper .devise-container {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem; }
+  .devise-wrapper a.previous-page {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: white; }
+    .devise-wrapper a.previous-page i {
+      margin-right: 0.75rem; }
 
 #header-navbar {
   height: 60px;
@@ -5685,5 +5692,4 @@ div[class*="sortable"] .card {
 
 label {
   margin-bottom: .3rem; }
-
 

@@ -10,4 +10,13 @@
     padding-top: $spacer*3;
     padding-bottom: $spacer*3;
   }
+
+  a.previous-page {
+    display: inline-block;
+    padding-bottom: $spacer*0.5;
+    font-size: $font-size-lg;
+    color: $devise-previous-link-color;
+
+    i { margin-right: $spacer*0.5; }
+  }
 }

@@ -47,6 +47,9 @@ app.get('/toggles', function(req, res) {
 app.get('/devise/login', function(req, res) {
   res.render('login.ejs');
 });
+app.get('/devise/forgot', function(req, res) {
+  res.render('forgot.ejs');
+});
 
 
 
