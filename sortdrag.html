@@ -1,4 +1,103 @@
-<%- include header.ejs %>
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,700italic,900,900italic,600,600italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+        <div id="sidebar-wrapper" role="navigation">
+      <a href="/" class="sidebar-brand hidden-sm-down"></a>
+      <ul class="nav sidebar-nav">
+        <li class="nav-item"><a href="/" class="nav-link active"><i class="fa fa-home" aria-hidden="true"></i> Start</a></li>
+
+        <li class="nav-item"><a href="#bootstrap-komponenter" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="bootstrap-komponenter">Bootstraps komponenter <i class="fa fa-chevron-right"></i></a>
+          <ul class="submenu collapse" id="bootstrap-komponenter">
+            <li class="nav-item"><a href="/forms" class="nav-link">Formulär</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="#egna-komponenter" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="egna-komponenter">Egna komponenter <i class="fa fa-chevron-right"></i></a>
+          <ul class="submenu collapse" id="egna-komponenter">
+            <li class="nav-item"><a href="/pageheader" class="nav-link">Page header</a></li>
+            <li class="nav-item"><a href="/buttons" class="nav-link">Buttons</a></li>
+            <li class="nav-item"><a href="/actiontoolbar" class="nav-link">Action toolbar</a></li>
+            <li class="nav-item"><a href="/imageupload" class="nav-link">Image upload</a></li>
+            <li class="nav-item"><a href="/sortdrag" class="nav-link">Sort & Drag</a></li>
+            <li class="nav-item"><a href="/toggles" class="nav-link">Toggle buttons</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="/colors" class="nav-link">Standardfärger</a></li>
+
+        <li class="nav-item"><a href="#ui-element" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-element"><i class="fa fa-list-ul" aria-hidden="true"></i> Dropdown <i class="fa fa-chevron-right"></i></a>
+          <ul class="submenu collapse" id="ui-element">
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-link" aria-hidden="true"></i> Frän länk</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-circle-o" aria-hidden="true"></i> Ikoner</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-circle-o" aria-hidden="true"></i> Disabled</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-circle-o" aria-hidden="true"></i> Active</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</a></li>
+            <li class="nav-item"><a href="#whatever" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="whatever"><i class="fa fa-list-ul" aria-hidden="true"></i> Whatever level 2 <i class="fa fa-chevron-right"></i></a>
+              <ul class="submenu collapse" id="whatever">
+                <li class="nav-item"><a href="#" class="nav-link">Level 3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Woho vad kul</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Header-navbar -->
+
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-full" id="header-navbar">
+
+        <button id="sidebar-toggle" class=" navbar-toggler" type="button">
+          <i class="fa fa-bars"></i> <span class="hidden-sm-down">Visa/dölj meny</span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+
+        <div class="btn-group pull-xs-right">
+          <button type="button" class="navbar-toggler btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-ellipsis-v hidden-md-up"></i>
+            <span class="hidden-sm-down">info@significantbit.se</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <h6 class="dropdown-header hidden-md-up">info@significantbit.se</h6>
+            <a class="dropdown-item" href="#"><i class="fa fa-wrench fa-fw"></i> Inställningar</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-link fa-fw"></i> Länk</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-fw"></i> Logga ut</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <!-- /#header-navbar -->
+
 
 <!-- Page Content -->
 
@@ -255,7 +354,16 @@
   </div>
     <!-- /#page-content-wrapper -->
 
-<%- include footer.ejs %>
+  </div>
+  <!-- /#wrapper -->
+
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
+
 
 <script src="js/jquery.nestable.js"></script>
 
