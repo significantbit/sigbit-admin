@@ -96,7 +96,27 @@
                               </li>
                           </ol>
 
-
+                      
+                </div>
+                <div class="col-md-12">
+                <h3>Exempelkod</h3>
+                <pre><code>
+  var updateOutput = function() { console.log('UPDATED'); }
+  $('#nestable').nestable({
+    listNodeName    : 'ol',
+    itemNodeName    : 'li',
+    rootClass       : 'nestable',
+    listClass       : 'nestable-list',
+    itemClass       : 'nestable-item',
+    dragClass       : 'nestable-dragel',
+    handleClass     : 'nestable-handle',
+    collapsedClass  : 'nestable-collapsed',
+    placeClass      : 'nestable-placeholder',
+    noDragClass     : 'nestable-nodrag',
+    emptyClass      : 'nestable-empty',
+    })
+  .on('change', updateOutput);
+                </code></pre>
                 </div>
               </div>
             </div>
@@ -126,6 +146,16 @@
                     <li class="list-group-item"><i class="fa drag-handle"></i> Vestibulum at eros</li>
                 </ul>
               </div>
+              <div class="col-md-12">
+                <h3>Exempelkod</h3>
+                <pre><code>
+    $('.card-sortable').sortable({
+      placeholderClass: 'col-sm-6 col-lg-4'
+    }).bind('sortupdate', function(e, ui) {
+      console.log('updated');
+    });
+                </code></pre>
+                </div>
             </div>
             <div class="row m-b-1">
               <div class="col-lg-12">
