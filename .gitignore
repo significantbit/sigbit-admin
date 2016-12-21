@@ -64,3 +64,5 @@ tags
 ### Sass ###
 .sass-cache/
 *.css.map
+
+/public/scripts.js
