@@ -74,13 +74,13 @@ gulp.task('bs-reload', function () {
   browserSync.reload();
 });
 gulp.task("scripts", function () {
-  gulp.src("public/js/scripts.js")
+  gulp.src("public/js/sigbit-admin.js")
     .pipe(include({
       includePaths: [
         __dirname + "/node_modules/jquery/dist",
         __dirname + "/node_modules/bootstrap/dist/js",
         __dirname + "/node_modules/tether/dist/js",
-        __dirname + "/public/js/libs",
+        __dirname + "/public/js",
       ]
     }))
     .on('error', console.log)
@@ -100,7 +100,7 @@ gulp.task('deploy', ['prod'], function() {
 });
 
 gulp.task('prod', function () {
-  gulp.src("public/js/scripts.js")
+  gulp.src("public/js/sigbit-admin.js")
     .pipe(include({
       includePaths: [
         __dirname + "/node_modules/jquery/dist",

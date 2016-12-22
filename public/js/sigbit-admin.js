@@ -1,9 +1,9 @@
 //=require jquery.js
 //=require tether.js
 //=require bootstrap.js
-//=require jquery.custom-file-input.js
-//=require jquery.nestable.js
-//=require jquery.sortable.min.js
+//=require libs/jquery.custom-file-input.js
+//=require libs/jquery.nestable.js
+//=require libs/jquery.sortable.min.js
 
 $(document).ready(function() {
   $('.inputfile').each(function () {
