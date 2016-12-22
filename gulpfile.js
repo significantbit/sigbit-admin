@@ -21,7 +21,10 @@ var BROWSER_SYNC_RELOAD_DELAY = 3000;
 gulp.task('sass', function () {
   return gulp.src('./public/**/*.scss')
     .pipe(sass({
-      includePaths: [require('node-bourbon').includePaths],
+      includePaths: [
+        require('node-bourbon').includePaths,
+        require('bootstrap').includePaths
+      ],
       errLogToConsole: true
     }).on('error', sass.logError))
     .pipe(concat('style.css')) // this is what was missing
