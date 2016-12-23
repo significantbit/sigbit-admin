@@ -106,7 +106,7 @@ gulp.task('prod', function () {
         __dirname + "/node_modules/jquery/dist",
         __dirname + "/node_modules/bootstrap/dist/js",
         __dirname + "/node_modules/tether/dist/js",
-        __dirname + "/public/js/libs",
+        __dirname + "/public/js",
       ]
     }))
     .on('error', console.log)
